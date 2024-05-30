@@ -64,7 +64,7 @@ public class ControllerRTF {
                 }
                 TextArea.setText(sb.toString());
             }catch (IOException e){
-                System.out.println("Error-OpenFile"+ e.getMessage());
+                System.out.println("Errora-OpenFile"+ e.getMessage());
             }
         }
     }
