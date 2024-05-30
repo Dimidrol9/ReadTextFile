@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="505.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.readtextfile.ControllerRTF">
+   <children>
+      <TextArea fx:id="TextArea" prefHeight="306.0" prefWidth="462.0">
+         <VBox.margin>
+            <Insets bottom="20.0" left="40.0" right="40.0" top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </TextArea>
+      <Button mnemonicParsing="false" onAction="#OpenFile" text="OpenFile" textFill="#23dc36">
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+      </Button>
+      <HBox prefHeight="27.0" prefWidth="127.0">
+         <VBox.margin>
+            <Insets bottom="15.0" left="200.0" right="200.0" />
+         </VBox.margin>
+         <children>
+            <ChoiceBox fx:id="voice" prefHeight="26.0" prefWidth="234.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#Speak" text="Speak" textFill="#e70c0c">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
